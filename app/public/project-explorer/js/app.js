@@ -165,7 +165,16 @@ const Register = {
     document
       .querySelectorAll("#signupForm input, #signupForm select")
       .forEach((item) => {
-        data[item.name] = item.value;
+        switch(item.name) {
+          case "firstName":
+            data['firstname'] = item.value;
+          break
+          case "lastName":
+            data['lastname'] = item.value;
+          break
+          default:
+            data[item.name] = item.value;
+        }
       });
 
     const resp = await Api.register(data);
