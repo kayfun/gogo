@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './components/Home';
+import Home from './Home';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Project from './components/Project';
-import CreateProject from './components/CreateProject';
+import Login from './Login';
+import Signup from './Signup';
+import Project from './Project';
+import CreateProject from './CreateProject';
 
 function App() {
   return (

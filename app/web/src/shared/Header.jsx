@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-import api from "../../api";
-import util from "../../util";
+import api from "../api";
+import util from "../util";
 export default () => {
 
   const [user, setuser] = useState();
