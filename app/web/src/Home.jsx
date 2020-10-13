@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import { Button, Jumbotron, Container, Row, Col, Card } from "react-bootstrap";
 import Layout from "./shared/Layout";
 import {Link } from 'react-router-dom'
-import api from '../api';
-import util from '../util';
+import api from './api';
+import util from './util';
 
 const Home = (props) => {
 

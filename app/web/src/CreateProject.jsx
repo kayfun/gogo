@@ -2,8 +2,8 @@ import Layout from "./shared/Layout";
 import React, { useState } from "react";
 import { Form, Button, Alert, Row, Col } from "react-bootstrap";
 
-import api from "../api";
-import util from "../util";
+import api from "./api";
+import util from "./util";
 import { useHistory } from "react-router-dom";
 
 export default () => {

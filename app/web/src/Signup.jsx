@@ -4,8 +4,8 @@ import { Form, Button, Row, Col, Alert } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import Layout from "./shared/Layout";
 
-import api from "../api";
-import util from '../util'
+import api from "./api";
+import util from './util'
 
 export default () => {
   const [programs, setPrograms] = useState([]);

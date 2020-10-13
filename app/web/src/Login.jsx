@@ -8,8 +8,8 @@ import {
   Alert
 } from "react-bootstrap";
 import Layout from "./shared/Layout";
-import api from '../api';
-import util from '../util'
+import api from './api';
+import util from './util'
 import { useHistory } from "react-router-dom";
 
 const Login = () => {

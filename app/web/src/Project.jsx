@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
-import api from "../api";
+import api from "./api";
 
 export default (props) => {
   const [project, setProject] = useState({
