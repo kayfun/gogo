@@ -46,7 +46,7 @@ export default () => {
       <Row>
         <Col>
           <h3 className="mb-4">Submit Project</h3>
-          <Form onSubmit={handleSubmit}>
+          <Form id="createProjectForm" onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Label>Project name</Form.Label>
               <Form.Control

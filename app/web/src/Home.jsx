@@ -39,7 +39,7 @@ const Home = (props) => {
         </Jumbotron>
 
         <Container>
-          <Row>
+          <Row className="showcase">
             {projects.map((project) => (
               <Col key={project.id} md={3} lg={3} > 
                 <Card  className="p-3">

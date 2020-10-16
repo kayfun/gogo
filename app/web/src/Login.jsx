@@ -40,7 +40,7 @@ const Login = () => {
             <Col>
               <h3 className="mb-4">Login</h3>
               {error && error.length > 0 && <Alert variant="danger">{error}</Alert>}
-              <Form onSubmit={handleSubmit}>
+              <Form id="loginForm" onSubmit={handleSubmit}>
                 <Form.Group>
                   <Form.Label>Email address</Form.Label>
                   <Form.Control

@@ -35,12 +35,12 @@ export default (props) => {
     <Layout>
       <Row>
         <Col>
-          <h3 className="mt-5">{project.name}</h3>
+          <h3 className="mt-5" id="project_name">{project.name}</h3>
           <Container>
             <Row className="p-3 mt-3 mb-5 bg-light text-dark">
               <Col>
                 Created By <br />{" "}
-                <h6>{`${project.createdBy?.firstname} ${project.createdBy?.lastname}`}</h6>
+                <h6 id="project_author">{`${project.createdBy?.firstname} ${project.createdBy?.lastname}`}</h6>
               </Col>
               <Col>Date Created <br /> <h6>{ project.createdAt}</h6></Col>
               <Col>Last Updated <br /> <h6>{ project.updatedAt}</h6></Col>
@@ -59,7 +59,7 @@ export default (props) => {
         <Col>
           <h5>Project Abstract</h5>
           <hr />
-          <p className="mb-5" style={{ fontSize: "1.1em" }}>
+          <p  id="project_abstract" className="mb-5" style={{ fontSize: "1.1em" }}>
             {project.abstract}
           </p>
           <h5>Comments</h5>
@@ -102,17 +102,17 @@ export default (props) => {
             <Card.Header>
               <h5>Author(s)</h5>
             </Card.Header>
-            <ListGroup variant="flush">
+            <ListGroup variant="flush" id="project_authors">
               {project.authors.map((author, index) => (
                 <ListGroup.Item key={index}>
                   <span>{author}</span>
                 </ListGroup.Item>
               ))}
             </ListGroup>
-            <Card.Footer className="text-muted">
+            <Card.Footer className="text-muted"  id="project_tags">
               {project.tags.map((tag, index) => (
                 <span key={index} className="mr-2">
-                  <a href={`/projects?search=${tag}&type=Tags`}>{`#${tag}`}</a>
+                  <a href={`/projects?search=${tag}&type=Tags`}>{`${tag}`}</a>
                 </span>
               ))}
             </Card.Footer>
