@@ -22,6 +22,9 @@
   .jumbotron-heading {
     font-weight: 300;
   }
+  .form-group{
+    margin-right: 30px;
+  }
   
   .jumbotron .container {
     max-width: 40rem;
